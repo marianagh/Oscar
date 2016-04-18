@@ -221,8 +221,8 @@ public class Principal extends JFrame {
 		JMenu mnReportes = new JMenu("Reportes");
 		menuBar.add(mnReportes);
 		
-		JMenuItem mntmNuevoreport = new JMenuItem("Nuevo Reporte");
-		mnReportes.addActionListener(new ActionListener() {
+		JMenuItem mntmNuevoReporte = new JMenuItem("Nuevo Reporte");
+		mntmNuevoReporte.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0){
 				panelContenedores.setVisible(false);	
 				panelInicio.setVisible(false);
@@ -230,7 +230,7 @@ public class Principal extends JFrame {
 				
 			}
 		} );
-		mnReportes.add(mntmNuevoreport);
+		mnReportes.add(mntmNuevoReporte);
 		
 		JMenuItem mntmExportar = new JMenuItem("Exportar");
 		mnReportes.add(mntmExportar);
